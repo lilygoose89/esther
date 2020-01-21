@@ -1,0 +1,16 @@
+site: Esther Coaching
+
+url: "https://www.esther.com/" # the base hostname & protocol for your site
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Esther Coaching
+author: Esther Voorman
+social:
+  name:
+  links:
+    - esther.com

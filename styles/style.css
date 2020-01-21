@@ -1,0 +1,316 @@
+/* universal styles ----------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* layout ----------------------------------------- */
+/* add because gridlex "bumps" the page layout beyond 100vw and causes "wiggle" in mobile */
+[class*=grid-],[class*=grid_],[class~=grid] {
+  margin: 0;
+  padding: 0;
+}
+.header-padding {
+  padding: 0 10%;
+}
+section {
+  margin: 5% 15%;
+}
+@media all and (max-width:1024px) {
+
+}
+@media all and (max-width:768px) {
+
+}
+@media all and (max-width:576px) {
+  section {
+    margin: 5% 10%;
+  }
+}
+
+/* typography ----------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+  font-family: ' ', sans-serif;
+}
+p,li {
+  font-family: ' ', sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-white {
+  color: white;
+}
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(69,69,69,0.89) !important;
+}
+@media all and (max-width:768px) {
+  .text-center-mobile {
+  text-align: center;
+  }
+}
+/* link and button styles ----------------------------------------- */
+.button-main {
+
+}
+.button-main:hover {
+
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+a {
+
+}
+a:hover {
+
+}
+@media all and (max-width:1024px) {
+
+}
+@media all and (max-width:768px) {
+
+}
+@media all and (max-width:576px) {
+
+}
+/* container styles ----------------------------------------- */
+.text-box {
+
+}
+.box-shadow {
+  /* box-shadow: 2px 2px 6px rgba(69,69,69,0.89) !important; */
+}
+/* header and nav styles ----------------------------------------- */
+.nav {
+
+}
+.logo-container {
+
+}
+.header {
+
+}
+.header-image {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: hidden;
+  position: relative;
+  top: 1px;
+}
+.header-text {
+
+}
+/* Scroll to top */
+.scroll-to-top-container {
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+}
+.scroll-to-top-icon {
+  font-size: 2em;
+  color: rgba(225,225,225,0.85);
+}
+.scroll-to-top-icon:hover {
+  color: rgb(225,225,225);
+  animation: wobbleud 1s linear infinite;
+  -webkit-font-smoothing: antialiased;
+}
+@media all and (max-width:1024px) {
+
+}
+@media all and (max-width:768px) {
+
+}
+@media all and (max-width:576px) {
+
+}
+
+
+/* page styles ----------------------------------------- */
+
+.social-icon {
+  color: white;
+  font-size: 3em;
+  opacity: 0.85;
+}
+.social-icon:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media all and (max-width:1024px) {
+
+}
+@media all and (max-width:768px) {
+  .icon {
+    max-width: 100px;
+  }
+}
+@media all and (max-width:576px) {
+  .icon {
+    max-width: 80px;
+  }
+}
+
+/* footer styles ----------------------------------------- */
+
+/* form styles ----------------------------------------- */
+
+/* helpers ----------------------------------------- */
+@media all and (max-width:768px) {
+  .text-center-mobile {
+  text-align: center;
+  }
+  .hide-tablet {
+    display: none;
+  }
+}
+@media all and (max-width:576px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+/* PADDING/MARGINS */
+.container-center {
+  margin: 0 auto !important;
+}
+.pad-all-xs {
+  padding: 1% !important;
+}
+.pad-all-s {
+  padding: 5% !important;
+}
+.pad-all-m {
+  padding: 10% !important;
+}
+.pad-all-l {
+  padding: 20% !important;
+}
+.pad-top-xs {
+  padding-top: 1% !important;
+}
+.pad-top-s {
+  padding-top: 5% !important;
+}
+.pad-top-m {
+  padding-top: 10% !important;
+}
+.pad-top-l {
+  padding-top: 20% !important;
+}
+.pad-right-xs {
+  padding-right: 1% !important;
+}
+.pad-right-s {
+  padding-right: 5% !important;
+}
+.pad-right-m {
+  padding-right: 10% !important;
+}
+.pad-right-l {
+  padding-right: 20% !important;
+}
+.pad-bottom-xs {
+  padding-bottom: 1% !important;
+}
+.pad-bottom-s {
+  padding-bottom: 5% !important;
+}
+.pad-bottom-m {
+  padding-bottom: 10% !important;
+}
+.pad-bottom-l {
+  padding-bottom: 20% !important;
+}
+.pad-left-xs {
+  padding-left: 1% !important;
+}
+.pad-left-s {
+  padding-left: 5% !important;
+}
+.pad-left-m {
+  padding-left: 10% !important;
+}
+.pad-left-l {
+  padding-left: 20% !important;
+}
+.margin-all-xs {
+  margin: 1% !important;
+}
+.margin-all-s {
+  margin: 5% !important;
+}
+.margin-all-m {
+  margin: 10% !important;
+}
+.margin-all-l {
+  margin: 20% !important;
+}
+.margin-top-xs {
+  margin-top: 1% !important;
+}
+.margin-top-s {
+  margin-top: 5% !important;
+}
+.margin-top-m {
+  margin-top: 10% !important;
+}
+.margin-top-l {
+  margin-top: 20% !important;
+}
+.margin-right-xs {
+  margin-right: 1% !important;
+}
+.margin-right-s {
+  margin-right: 5% !important;
+}
+.margin-right-m {
+  margin-right: 10% !important;
+}
+.margin-right-l {
+  margin-right: 20% !important;
+}
+.margin-bottom-xs {
+  margin-bottom: 1% !important;
+}
+.margin-bottom-s {
+  margin-bottom: 5% !important;
+}
+.margin-bottom-m {
+  margin-bottom: 10% !important;
+}
+.margin-bottom-l {
+  margin-bottom: 20% !important;
+}
+.margin-left-xs {
+  margin-left: 1% !important;
+}
+.margin-left-s {
+  margin-left: 5% !important;
+}
+.margin-left-m {
+  margin-left: 10% !important;
+}
+.margin-left-l {
+  margin-left: 20% !important;
+}
+/* POSITION */
+.position-rel {
+  position: relative;
+}
+.position-abs {
+  position: absolute;
+}
