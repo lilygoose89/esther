@@ -2,7 +2,7 @@ basic_settings:
   site_title: Esther Coaching
   favicon_image: /images/favicon.ico
   og_image: /images/screenshot.png
-  logo_image: /images/esther-logo.png
+  logo_image: /images/ev.png
 
 footer_settings:
   footer_tagline: Currently located in Chiang Mai, Thailand
@@ -19,7 +19,7 @@ footer_settings:
 #       url: '/contact'
 
 contact_settings:
-  email: ecoverdesmokesupply@gmail.com
+  email: busababruns@gmail.com
   email_subject: Message via Esther Coaching Website
   send_button_text: Send Message
   phone: ''
@@ -35,8 +35,8 @@ social_settings:
   linkedin_url: ''
 
 colors:
-  primary_color: ' '
-  secondary_color: ' '
-  tertiery_color: ' '
-  light_color: ' '
-  dark_color: ' '
+  primary_color: '#ff66cc'
+  secondary_color: '#00BFB3'
+  tertiery_color: '#CCFF66'
+  light_color: '#91E3DE'
+  dark_color: '#180010'

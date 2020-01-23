@@ -73,6 +73,9 @@ a {
 a:hover {
 
 }
+.gigantic {
+  font-size: 10em;
+}
 @media all and (max-width:1024px) {
 
 }
@@ -83,6 +86,13 @@ a:hover {
 
 }
 /* container styles ----------------------------------------- */
+.half-height {
+  min-height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  position: relative;
+}
 .text-box {
 
 }
@@ -91,10 +101,16 @@ a:hover {
 }
 /* header and nav styles ----------------------------------------- */
 .nav {
-
+  position: absolute;
+  padding: 2% 1%;
+  z-index: 999;
+}
+.logo-letter {
+  font-size: 6em;
 }
 .logo-container {
-
+  width: 35%;
+  height: auto;
 }
 .header {
 
@@ -103,7 +119,7 @@ a:hover {
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   overflow-y: hidden;
   position: relative;
   top: 1px;
