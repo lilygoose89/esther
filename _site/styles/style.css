@@ -1,6 +1,7 @@
 /* universal styles ----------------------------------------- */
 * {
   box-sizing: border-box;
+  border: 1px dotted blue;
 }
 img {
   max-width: 100%;
@@ -14,10 +15,10 @@ img {
   padding: 0;
 }
 .header-padding {
-  padding: 0 10%;
+  padding: 0 7.5%;
 }
 section {
-  margin: 5% 15%;
+  padding: 5% 15%;
 }
 @media all and (max-width:1024px) {
 
@@ -33,10 +34,24 @@ section {
 
 /* typography ----------------------------------------- */
 h1,h2,h3,h4,h5,h6 {
-  font-family: ' ', sans-serif;
+  font-family: 'Abril Fatface', cursive;
+}
+h2 {
+  font-family: 'Abril Fatface', cursive;
+  color: #00BFB3;
+  font-size: 3em;
+  display: inline;
+  border-bottom: 0 solid rgb(204,255,102);
+  box-shadow: inset 0 -8px 0 rgb(204,255,102);
+}
+h3 {
+  font-family: 'Abril Fatface', cursive;
+  color: #180010;
+  font-size: 1.8em;
 }
 p,li {
-  font-family: ' ', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #180010;
 }
 .text-center {
   text-align: center;
@@ -75,6 +90,8 @@ a:hover {
 }
 .gigantic {
   font-size: 10em;
+  color: white;
+  margin: 0;
 }
 @media all and (max-width:1024px) {
 
@@ -99,21 +116,41 @@ a:hover {
 .box-shadow {
   /* box-shadow: 2px 2px 6px rgba(69,69,69,0.89) !important; */
 }
-/* header and nav styles ----------------------------------------- */
-.nav {
-  position: absolute;
-  padding: 2% 1%;
-  z-index: 999;
+.bg-turq {
+  background-color: #00bfb3;
 }
-.logo-letter {
-  font-size: 6em;
-}
-.logo-container {
-  width: 35%;
-  height: auto;
-}
-.header {
 
+/* lime drop shadow effects */
+.lime-shadow-logo {
+  color: #00bfb3;
+  text-shadow: -3px -3px 0px rgba(204,255,102,1);
+  font-family: 'Abril Fatface', cursive;
+  font-size: 7em;
+  margin: 0;
+  padding: 0;
+}
+.lime-shadow {
+  text-shadow: -4px -4px 0px rgba(204,255,102,1);
+}
+.lime-box-shadow {
+  -webkit-box-shadow: -5px -5px 0px 0px rgba(204,255,102,1);
+  -moz-box-shadow: -5px -5px 0px 0px rgba(204,255,102,1);
+  box-shadow: -5px -5px 0px 0px rgba(204,255,102,1);
+}
+svg {
+    width: auto;
+    height: auto;
+    fill: #00bfb3;
+    filter: drop-shadow(-4px -4px 0px rgba(204,255,102,1));
+  }
+}
+
+/* header and nav styles ----------------------------------------- */
+.logo {
+  position: absolute;
+  padding-left: 7.5%;
+  padding-top: 5%;
+  z-index: 999;
 }
 .header-image {
   min-height: 100vh;
