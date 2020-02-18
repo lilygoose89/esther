@@ -1,7 +1,7 @@
 /* universal styles ----------------------------------------- */
 * {
   box-sizing: border-box;
-  border: 1px dotted blue;
+  /* border: 1px dotted blue; */
 }
 img {
   max-width: 100%;
@@ -52,6 +52,7 @@ h3 {
 p,li {
   font-family: 'Roboto', sans-serif;
   color: #180010;
+  font-size: 1em;
 }
 .text-center {
   text-align: center;
@@ -61,6 +62,9 @@ p,li {
 }
 .text-white {
   color: white;
+}
+.text-dark {
+  color: #180010;
 }
 .text-shadow {
   text-shadow: 2px 2px 6px rgba(69,69,69,0.89) !important;
@@ -72,10 +76,16 @@ p,li {
 }
 /* link and button styles ----------------------------------------- */
 .button-main {
-
+  border: 3.5px solid #ed254e;
+  padding: 0.6em 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #ed254e;
+  background: transparent;
 }
 .button-main:hover {
-
+  background: #ed254e;
+  color: white;
   -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -116,8 +126,23 @@ a:hover {
 .box-shadow {
   /* box-shadow: 2px 2px 6px rgba(69,69,69,0.89) !important; */
 }
+.bg-white {
+  background-color: rgba(253, 255, 252, 0.85);
+}
+.bg-dark {
+  background-color: #180010;
+}
 .bg-turq {
   background-color: #00bfb3;
+}
+.turq-overlay {
+  background: linear-gradient(rgba(0, 191, 179,0.5), rgba(0, 191, 179,0.5));
+}
+.pink-overlay {
+  background: linear-gradient(rgba(237, 37, 78,0.5), rgba(237, 37, 78,0.5));
+}
+.pink-outline {
+  border: 5px solid #ed254e;
 }
 
 /* lime drop shadow effects */
@@ -142,8 +167,8 @@ svg {
     height: auto;
     fill: #00bfb3;
     filter: drop-shadow(-4px -4px 0px rgba(204,255,102,1));
-  }
 }
+
 
 /* header and nav styles ----------------------------------------- */
 .logo {
@@ -199,6 +224,7 @@ svg {
 }
 .social-icon:hover {
   opacity: 1;
+  /* color: #ed254e; */
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -221,7 +247,41 @@ svg {
 /* footer styles ----------------------------------------- */
 
 /* form styles ----------------------------------------- */
-
+#contact input[type="name"],
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-family: 'Roboto', san-serif;
+  color: #757679;
+}
+#contact input[type="name"]:hover,
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+#contact textarea {
+  min-height: 200px;
+  max-width: 100%;
+  resize: none;
+  font-family: 'Roboto', san-serif;
+  color: #757679;
+}
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+  font-family: 'Roboto', san-serif;
+  color: #757679;
+}
 /* helpers ----------------------------------------- */
 @media all and (max-width:768px) {
   .text-center-mobile {
@@ -299,6 +359,9 @@ svg {
 }
 .pad-left-l {
   padding-left: 20% !important;
+}
+.margin-0 {
+  margin: 0 !important;
 }
 .margin-all-xs {
   margin: 1% !important;
