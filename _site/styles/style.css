@@ -52,7 +52,7 @@ h3 {
 p,li {
   font-family: 'Roboto', sans-serif;
   color: #180010;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .text-center {
   text-align: center;
@@ -181,7 +181,7 @@ svg {
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: bottom;
   overflow-y: hidden;
   position: relative;
   top: 1px;
