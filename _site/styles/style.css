@@ -18,7 +18,7 @@ img {
   padding: 0 7.5%;
 }
 section {
-  padding: 5% 15%;
+  padding: 7.5% 15%;
 }
 @media all and (max-width:1024px) {
 
@@ -33,7 +33,7 @@ section {
 }
 
 /* typography ----------------------------------------- */
-h1,h2,h3,h4,h5,h6 {
+h1,h5,h6 {
   font-family: 'Abril Fatface', cursive;
 }
 h2 {
@@ -47,8 +47,14 @@ h2 {
 h3 {
   font-family: 'Abril Fatface', cursive;
   color: #180010;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
+h4 {
+  font-family: 'Abril Fatface', cursive;
+  color: #180010;
+  font-size: 1.2em;
+}
+
 p,li {
   font-family: 'Roboto', sans-serif;
   color: #180010;
@@ -86,6 +92,22 @@ p,li {
 .button-main:hover {
   background: #ed254e;
   color: white;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.button-white {
+  border: 3.5px solid white;
+  padding: 0.6em 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: white;
+  background: transparent;
+}
+.button-white:hover {
+  background: white;
+  color: #ed254e;
   -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -134,6 +156,9 @@ a:hover {
 }
 .bg-turq {
   background-color: #00bfb3;
+}
+.bg-pink {
+  background-color: #ed254e;
 }
 .turq-overlay {
   background: linear-gradient(rgba(0, 191, 179,0.5), rgba(0, 191, 179,0.5));
@@ -186,9 +211,22 @@ svg {
   position: relative;
   top: 1px;
 }
-.header-text {
-
+.header-image-cta {
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow-y: hidden;
+  position: relative;
+  top: 1px;
 }
+.header-cta {
+  position: relative;
+  min-height: 10vh;
+  z-index: 999;
+  width: 100%;
+}
+
 /* Scroll to top */
 .scroll-to-top-container {
   position: fixed;
@@ -252,7 +290,7 @@ svg {
 #contact input[type="email"],
 #contact textarea {
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   background: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -263,10 +301,11 @@ svg {
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #ddd;
 }
 #contact textarea {
   min-height: 200px;
@@ -299,6 +338,9 @@ svg {
 /* PADDING/MARGINS */
 .container-center {
   margin: 0 auto !important;
+}
+.pad-0 {
+  padding: 0 !important;
 }
 .pad-all-xs {
   padding: 1% !important;
