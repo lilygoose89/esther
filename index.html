@@ -207,7 +207,7 @@ settings:
     og_image: /images/screenshot.png
     logo_image: /images/ev.png
   contact_settings:
-    email: busababruns@gmail.com
+    email: esthersf.coach@gmail.com
     email_subject: Message via Esther Coaching Website
     send_button_text: Send Message
     phone:
@@ -343,7 +343,7 @@ layout: default
   </div>
 
   <div class="editable">
-    
+
   </div>
 
 </section>
@@ -447,14 +447,17 @@ layout: default
 
  -->
 
-<section id="contact" style="background:linear-gradient(rgba(237, 37, 78,0.5), rgba(237, 37, 78,0.5)), url({{ page.images.contact_image }})" class="pink-overlay bg-image">
+<section id="contact" style="background:linear-gradient(rgba(237, 37, 78,0.5), rgba(237, 37, 78,0.5)), url({{ page.images.contact_image }});" class="pink-overlay bg-image">
 
   <div class="text-box margin-top-xs pad-all-s bg-white margin-bottom-s">
     <div class="pad-bottom-s">
       <h2 class="text-center">Send an Email</h2>
     </div>
+
     <form method="post" action="https://formspree.io/{{page.settings.contact_settings.email}}" id="contact-form">
+
       <div class="grid-spaceBetween-noGutter">
+
         <div class="col-5_sm-12">
           <input type="text" name="name" placeholder="Your Name" />
         </div>
@@ -471,8 +474,10 @@ layout: default
             <input type="submit" value="{{ page.settings.contact_settings.send_button_text }}" class="button-main" style="width: 100%;" />
           </div>
         </div>
+
       </div>
     </form>
+
   </div>
 
   <div class="grid-spaceAround pad-all-xs pad-top-s">

@@ -153,7 +153,6 @@ a:hover {
   background-position: bottom;
   overflow-y: hidden;
   position: relative;
-  z-index: -1;
 }
 .half-height {
   min-height: 50vh;
